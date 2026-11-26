@@ -108,7 +108,9 @@ Creative Commons Attribution 4.0 International (CC BY 4.0): free to share and ad
 
 > MenoCost.com, US online menopause treatment prices, https://menocost.com/data
 
-Archived versions with a DOI are on [Zenodo](https://zenodo.org/records/24295689); the same data is on
-[Hugging Face](https://huggingface.co/datasets/menocost/us-menopause-treatment-prices).
+Archived versions with a DOI are on [Zenodo](https://doi.org/10.5281/zenodo.24293626); the same data is on
+[Hugging Face](https://huggingface.co/datasets/menocost/us-menopause-treatment-prices). A report on these prices,
+*What US online menopause services charge for hormone therapy* (November 2026), is
+[doi:10.5281/zenodo.24558133](https://doi.org/10.5281/zenodo.24558133).
 
 Prices change: before acting on one, open the service's page in `source_url`. Nothing here is medical advice.
