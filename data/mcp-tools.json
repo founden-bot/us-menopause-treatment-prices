@@ -1,0 +1,34 @@
+[
+ {
+  "name": "find_menopause_treatment_prices",
+  "description": "US online services' prices for one menopause treatment, lowest 30-day cost first (a membership charged on top included). Accepts a treatment or a product name: \"estradiol patch\", \"progesterone\", \"vaginal estrogen\", \"Veozah\", \"compounded hormones\", \"Bi-Est\", \"testosterone for women\". Returns each service, product, 30-day cost, the service's own price wording, what starting costs, whether it takes insurance, the day read, the source page, whether this site may earn a referral fee, and the page with every price."
+ },
+ {
+  "name": "find_menopause_service_prices",
+  "description": "Every published menopause treatment price of one US online service (Midi Health, Alloy, Winona, Evernow, Hone Health and others), lowest first, with its fees, insurance and the page each was read on."
+ },
+ {
+  "name": "find_menopause_pharmacy_cash_prices",
+  "description": "What a menopause medicine costs at a cash pharmacy without insurance, with a prescription: Mark Cuban Cost Plus Drugs' own published prices for the brand and its generic (estradiol tablets, patches, gel, vaginal cream, inserts and ring, progesterone, Prempro, Activella, Premarin, paroxetine 7.5 mg), a pharmacy membership's flat monthly price where its own page names the medicine (Amazon Pharmacy RxPass for estradiol tablets), and for brands Cost Plus does not sell, what US pharmacies pay (CMS NADAC) and the maker's savings program. Accepts a treatment or a brand: \"estradiol patch\", \"progesterone\", \"Premarin\", \"Estring\", \"Imvexxy\". Returns each product, strength, pack, price before shipping, shipping, the day read, the source, and the page."
+ },
+ {
+  "name": "menopause_boxed_warning_status",
+  "description": "Where the current FDA labels of menopause hormone therapy stand on the boxed warning FDA asked makers to change on 10 Nov 2025, as FDA's label database (openFDA) reads today: per treatment, how many makers' labels carry the updated (endometrial-only) warning, none, or the full warning with cardiovascular and dementia language, and each label's brand, maker, route and date. Optional treatment, e.g. \"estradiol patch\"."
+ },
+ {
+  "name": "menopause_fda_actions",
+  "description": "FDA's approvals, generic approvals, label changes and safety notices for menopause treatments (estradiol, conjugated estrogens, progesterone, Veozah, Lynkuet, paroxetine 7.5 mg), newest first, each dated with its source, read from FDA's records each day. Optional treatment filter."
+ },
+ {
+  "name": "menopause_pharmacy_cost_nadac",
+  "description": "What US retail pharmacies pay per unit for a menopause medicine and each of its strengths and brands, from CMS's weekly NADAC survey (newest week, and the week before when it moved). A pharmacy's cost, not a price a person pays. Accepts a treatment or a product word, e.g. \"estradiol patch\", \"Prometrium\", \"Veozah\"."
+ },
+ {
+  "name": "menopause_public_payers",
+  "description": "What Medicaid paid per prescription (CMS State Drug Utilization Data, newest four quarters) and what Medicare drug plans paid per claim (CMS Part D Prescribers by Geography and Drug, newest year) for a menopause treatment, nationally or in one US state, with each drug's Medicare spending per unit over five years. What a payer paid, not a price a person pays. Accepts a treatment, e.g. \"estradiol patch\", and an optional two-letter state code, e.g. \"TX\"."
+ },
+ {
+  "name": "list_menopause_treatments",
+  "description": "Every menopause treatment this site keeps a price list for, with its lowest 30-day cost, how many prices it has and its page."
+ }
+]
