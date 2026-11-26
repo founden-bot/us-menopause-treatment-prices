@@ -1,0 +1,35 @@
+name: Refresh from menocost.com
+
+# Once a day, copy the open dataset from https://menocost.com/data and commit it when anything changed.
+on:
+  schedule:
+    - cron: "17 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the dataset
+        run: |
+          set -euo pipefail
+          for f in menopause-treatment-prices.csv menopause-treatment-prices.json menopause-pharmacy-costs.csv menopause-label-status.csv menopause-prescriptions-by-state.csv menopause-insurer-drug-lists.csv; do
+            curl -fsSL --retry 3 -A "menocost-dataset-mirror (github.com)" -o "data/$f.new" "https://menocost.com/data/$f"
+            test -s "data/$f.new" && mv "data/$f.new" "data/$f"
+          done
+          curl -fsS --retry 3 -X POST https://menocost.com/api/mcp -H "Content-Type: application/json" -H "Accept: application/json, text/event-stream" -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}' -o mcp.raw || true
+          python3 scripts/mcp_tools.py mcp.raw && rm -f mcp.raw
+          python3 scripts/readme.py
+      - name: Commit when changed
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "MenoCost.com"
+            git config user.email "hello@menocost.com"
+            git add -A
+            git commit -m "Prices as read on $(date -u +%Y-%m-%d)"
+            git push
+          fi
