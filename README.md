@@ -11,13 +11,13 @@ same prices are shown service by service and treatment by treatment, with each o
 
 | File | What it holds | Rows |
 |---|---|---|
-| `data/menopause-treatment-prices.csv` (and `.json` with the column guide) | Self-pay prices at 75 online services | 275 |
-| `data/menopause-pharmacy-costs.csv` | What US pharmacies pay per unit (CMS NADAC), week by week, 2026-01-07 to 2026-11-18 | 4,609 |
+| `data/menopause-treatment-prices.csv` (and `.json` with the column guide) | Self-pay prices at 75 online services | 276 |
+| `data/menopause-pharmacy-costs.csv` | What US pharmacies pay per unit (CMS NADAC), week by week, 2026-01-07 to 2026-11-25 | 4,710 |
 | `data/menopause-label-status.csv` | FDA labels of menopause hormone products (DailyMed) | 271 |
 | `data/menopause-prescriptions-by-state.csv` | What Medicaid and Medicare drug plans paid for menopause medicines, by state (CMS) | 3,218 |
 | `data/menopause-insurer-drug-lists.csv` | Menopause medicines on insurers' own drug lists (Aetna, Anthem, UnitedHealthcare, Kaiser, FEP Blue, Oscar, Cigna) and TRICARE's rules | 165 |
 
-Prices last read: **2026-11-24**.
+Prices last read: **2026-11-26**.
 
 ## Lowest 30-day cost by treatment
 
@@ -26,15 +26,15 @@ services that publish one. Starting prices ("from") count as published.
 
 | Treatment | Services with a price | Lowest | Middle |
 |---|---|---|---|
-| [Progesterone](https://menocost.com/treatments/progesterone) | 32 | $11 | $74 |
+| [Progesterone](https://menocost.com/treatments/progesterone) | 32 | $19 | $77 |
 | [Vaginal estrogen](https://menocost.com/treatments/vaginal-estrogen) | 30 | $20 | $89 |
-| [Low-dose paroxetine](https://menocost.com/treatments/paroxetine) | 6 | $20 | $69 |
-| [Estradiol pill](https://menocost.com/treatments/estradiol-pill) | 32 | $29 | $79 |
+| [Low-dose paroxetine](https://menocost.com/treatments/paroxetine) | 6 | $20 | $79 |
+| [Estradiol pill](https://menocost.com/treatments/estradiol-pill) | 32 | $29 | $84 |
 | [Testosterone for women](https://menocost.com/treatments/testosterone-women) | 15 | $33 | $85 |
 | [Compounded hormones](https://menocost.com/treatments/compounded-hormones) | 83 | $36 | $103 |
 | [Estradiol patch](https://menocost.com/treatments/estradiol-patch) | 31 | $63 | $129 |
-| [Estrogen and progesterone together](https://menocost.com/treatments/combined-hrt) | 19 | $69 | $124 |
-| [Estradiol gel or spray](https://menocost.com/treatments/estradiol-gel) | 10 | $70 | $86 |
+| [Estrogen and progesterone together](https://menocost.com/treatments/combined-hrt) | 20 | $69 | $122 |
+| [Estradiol gel or spray](https://menocost.com/treatments/estradiol-gel) | 10 | $70 | $94 |
 
 The cheapest option for each treatment, with the service and its terms, is on
 [menocost.com](https://menocost.com/cheapest-hrt-online). What HRT costs per month, with and without insurance, is
